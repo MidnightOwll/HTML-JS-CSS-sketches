@@ -36,10 +36,16 @@ body{
     line-height: 45px;
     text-decoration: underline;
     cursor: pointer;
+    padding-left: 5px;
 }
-.header__top-inner{
+.header__top-inner,
+.header__content-inner{
     display: flex;
     justify-content: space-between;
+}
+.header__top-right{
+    display: flex;
+    justify-content: end;
 }
 .default__btn{    
     color: #1b1b1b;
@@ -52,13 +58,41 @@ body{
     float: right; 
     line-height: 45px;
     padding: 0px 15px;   
-    font-size: 16px;
+    font-size: 16px;   
 }
 .header__info{
     color: #fff;
     letter-spacing: 0.25px;
     line-height: 45px;
     font-size: 18px;
+    padding-right: 10px;
+}
+
+.header__logo{
+    padding: 0;
+    width: 100px;
+    height: 45px;
+}
+.menu {
+    float: right;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px #2f2f36 solid;
+}
+.menu li > a{
+    color: #e4e3ff;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0 5px;
+    text-align: center;
+}
+.menu li:first-child{
+    border-left: 1px #2f2f36 solid;
+}
+.header__content{
+    background-color: #3b3c49;
 }
 .popup__bg {
     position: fixed;
@@ -97,4 +131,15 @@ body{
     width: 20px;
     height: 20px;
     background-color: red;
+}
+
+@media screen and (max-width: 1320px) {
+    .header__close{
+        position: static;
+        float: none;
+    }
+    .header__btn{
+        float: none; 
+        
+    }
 }
