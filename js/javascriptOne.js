@@ -4,8 +4,8 @@ let closeBtn = document.getElementsByClassName('header__close')[0];
 let msg = document.getElementsByClassName('header__top')[0];
 let popupBg = document.querySelector('.popup__bg');
 let popup = document.querySelector('.popup'); 
-let openPopupButtons = document.querySelectorAll('.open-popup'); 
-let closePopupButton = document.querySelector('.close-popup'); 
+let openPopupButtons = document.querySelectorAll('.open__popup'); 
+let closePopupButton = document.querySelector('.close__popup'); 
 
 
 function closeHeaderMsg(){ 
