@@ -1,9 +1,9 @@
 
 /* Слайдер 1*/
-let sliderItem = document.querySelectorAll('.slider__item'); 
-let nextBtn = document.querySelector('#next'); 
-let prevBtn = document.querySelector('#prev'); 
-let slideIndex = 0;
+let sliderItem = document.querySelectorAll('.slider__item'),
+nextBtn = document.querySelector('#next'),
+prevBtn = document.querySelector('#prev'),
+slideIndex = 0;
 function showSlides(n) {
     if (n > sliderItem.length-1) {
       slideIndex = 0
@@ -24,3 +24,7 @@ function prevSlide(){
 }
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
+/*--------------------------------------*/
+
+/* Слайдер 2*/
+
