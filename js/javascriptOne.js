@@ -1,10 +1,10 @@
 
-let closeBtn = document.getElementsByClassName('header__close')[0];
-let msg = document.getElementsByClassName('header__top')[0];
-let popupBg = document.querySelector('.popup__bg');
-let popup = document.querySelector('.popup'); 
-let openPopupButtons = document.querySelectorAll('.open__popup'); 
-let closePopupButton = document.querySelector('.close__popup'); 
+let closeBtn = document.getElementsByClassName('header__close')[0],
+msg = document.getElementsByClassName('header__top')[0],
+popupBg = document.querySelector('.popup__bg'),
+popup = document.querySelector('.popup'),
+openPopupButtons = document.querySelectorAll('.open__popup'),
+closePopupButton = document.querySelector('.close__popup'); 
 
 
 function closeHeaderMsg(){ 
@@ -28,10 +28,10 @@ closePopupButton.addEventListener('click',() => {
 });
 
 /* Слайдер 1*/
-let sliderItem = document.querySelectorAll('.slider__item'); 
-let nextBtn = document.querySelector('#next'); 
-let prevBtn = document.querySelector('#prev'); 
-let slideIndex = 0;
+let sliderItem = document.querySelectorAll('.slider__item'),
+nextBtn = document.querySelector('#next'),
+prevBtn = document.querySelector('#prev'),
+slideIndex = 0;
 function showSlides(n) {
     if (n > sliderItem.length-1) {
       slideIndex = 0
