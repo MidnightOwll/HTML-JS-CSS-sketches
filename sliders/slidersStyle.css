@@ -74,6 +74,7 @@ right: 0;
 }
 .slider2__items{
     display: flex;
+    transform: translate3d(0px, 0px, 0px);
 }
 .slider2__item{
     flex-shrink: 0;
@@ -84,7 +85,6 @@ right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate3d(0px, 0px, 0px);
 }
 .slider2__item-inner{
    text-align: center;
@@ -101,4 +101,9 @@ right: 0;
     justify-content: space-between;
     top: 50%;
     transform:translateY(-50%);
+}
+.slider2__next-btn.disabled,
+.slider2__prew-btn.disabled {
+  opacity: .25;
+  pointer-events: none;
 }
