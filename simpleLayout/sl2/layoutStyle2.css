@@ -1,0 +1,249 @@
+/* Обнуление стилей*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*----------------*/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #273d46;
+    line-height: 36px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    width: 100%;
+}
+.main__content{
+    padding: 20px;
+}
+/* Псевдоклассы*/
+.pseudo-classes__block{
+    background: #e8e8e8;
+    border-top: 3px solid #666;
+    border-bottom: 5px dotted #666;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pseudo-classes__title h2{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pseudo-classes__lists{
+    margin: 10px 0;
+}
+.pseudo-classes__lists>div{
+    margin: 10px 0;
+}
+.pseudo-classes__block .list1-title h3,
+.pseudo-classes__block .list2-title h3{
+    font-size: 25px;
+    font-style:oblique;
+    font-weight: 700;
+}
+.pseudo-classes__list1 ul,
+.pseudo-classes__list2 ul{
+    margin-left: 30px;
+}
+.pseudo-classes__list1 ul>li,
+.pseudo-classes__list2 ul>li{
+    cursor: pointer;
+    background: url("../../img/check_icon.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.pseudo-classes__list1 ul li:first-child{
+    text-decoration: line-through;
+}
+.pseudo-classes__list1 ul li:last-child{
+    text-transform: uppercase;
+}
+.pseudo-classes__list1 ul li:nth-child(2){
+    font-weight: 700;
+}
+.pseudo-classes__list1 ul li:nth-child(3){
+    font-style: italic;
+}
+.pseudo-classes__list2 ul li:nth-child(odd):hover{
+    color: #d55a5a;
+    background: url("../../img/check_icon_red.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.pseudo-classes__list2 ul li:nth-child(even):hover{
+    color: blue;
+}
+.pseudo-classes__input>input{
+    width: 294px;
+    height: 52px;
+    border: 1px solid #b0b0b0;
+    margin: 10px;
+}
+.pseudo-classes__input>input:first-child:focus{
+    border: 1px solid #7fbed5;
+    box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+}
+.pseudo-classes__input>input:last-child:focus{
+    border: 1px solid #2db820;
+    box-shadow: 0px 0px 20px -1px rgba(30, 179, 62, 0.93);
+}
+.pseudo-classes__buttons>button{
+    width: 199px;
+    height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    background: #80b7b3;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.pseudo-classes__buttons>button:nth-child(2):hover,
+.pseudo-classes__buttons>button:nth-child(3):hover{
+    background-color: #3a5856;
+}
+.pseudo-classes__buttons>button:nth-child(3):active{
+    background-color: #818181;
+}
+/*-----------------*/
+/* псевдоэлементы*/
+.pseudo-elements__block{
+    background: #c8e2c3;
+    border-top: 3px solid #a31818;
+    border-bottom: 5px dotted #a31818;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pseudo-elements__title h2{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pseudo-elements__lists{
+    margin: 10px 0;
+}
+.pseudo-elements__lists>div{
+    margin: 10px 0;
+}
+.pseudo-elements__block .list1-title h3,
+.pseudo-elements__block .list2-title h3{
+    font-size: 25px;
+    font-style:oblique;
+    font-weight: 700;
+}
+.pseudo-elements__list1 ul,
+.pseudo-elements__list2 ul{
+    margin-left: 30px;
+}
+.pseudo-elements__list1 ul>li,
+.pseudo-elements__list2 ul>li{
+    cursor: pointer;
+}
+.pseudo-elements__list1 ul>li::before,
+.pseudo-elements__list2 ul>li::before{
+    content: url("../../img/check_icon.png");
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+}
+.pseudo-elements__list1 ul li:first-child{
+    text-decoration: line-through;
+}
+.pseudo-elements__list1 ul li:last-child{
+    text-transform: uppercase;
+}
+.pseudo-elements__list1 ul li:nth-child(2){
+    font-weight: 700;
+}
+.pseudo-elements__list1 ul li:nth-child(3){
+    font-style: italic;
+}
+.pseudo-elements__list2 ul li:nth-child(odd):hover{
+    color: #d55a5a;
+}
+.pseudo-elements__list2 ul li:nth-child(odd):hover::before{
+    content: url("../../img/check_icon_red.png");
+}
+.pseudo-elements__list2 ul li:nth-child(even):hover{
+    color: blue;
+}
+
+.pseudo-elements__buttons>button{
+    width: 199px;
+    height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    background: #80b7b3;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.pseudo-elements__buttons button::after{
+    content: " \2192";
+}
+.pseudo-elements__buttons>button:nth-child(2):hover,
+.pseudo-elements__buttons>button:nth-child(3):hover{
+    background-color: #3a5856;
+}
+.pseudo-elements__buttons>button:nth-child(3):active{
+    background-color: #818181;
+}
+.pseudo-elements__text p{
+    margin: 10px;
+}
+.pseudo-elements__text p:first-child::first-line{
+    color: #ff0000;
+}
+.pseudo-elements__text p:last-child::first-letter{
+    color: #ff0000;
+}
+/*------------*/

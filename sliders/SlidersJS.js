@@ -45,6 +45,11 @@ let slider = document.querySelector('.slider2'),
     trfRegExp = /[-0-9.]+(?=px)/,
     slide = function() {
         sliderItems.style.transition = 'transform .5s';
+        if( sliderItems.style.transform.match(trfRegExp)[0] > 0){
+            slide2Index = 0;
+        } else if (sliderItems.style.transform.match(trfRegExp)[0] < -(sliderItems.scrollWidth - sliderItems.offsetWidth)){
+            slide2Index = slides.length - 1
+        }
         sliderItems.style.transform = `translate3d(-${slide2Index * slideWidth}px, 0px, 0px)`;
         prev.classList.toggle('disabled', slide2Index === 0);
         next.classList.toggle('disabled', slide2Index === --slides.length);

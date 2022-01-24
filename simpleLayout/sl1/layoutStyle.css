@@ -1,0 +1,120 @@
+
+/* Обнуление стилей*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*----------------*/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #110d0d;
+    background: url("../img/road_bg.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    width: 100%;
+}
+.main__content{
+    padding: 20px;
+}
+.main__content-background{
+    padding: 10px 30px;
+    background: #bccbcc;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 2px 2px;
+}
+.name-block{
+    overflow: hidden;
+    box-shadow: 3px -5px 10px 1px,inset 3px -5px 10px 1px;
+    border-radius: 30px;
+
+}
+.title{
+    color: #afda16;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow:  3px -5px 10px #2d3835;
+    margin: 5px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.content__main-block{
+    margin: 10px 0;
+    background: url("../img/clock.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    padding-left: 110px;    
+}
+.content__middle-block{
+    margin: 10px 0;
+    padding: 10px;
+    background: url("../img/clock.jpg");
+    background-position: 50% 55px;
+    background-repeat: no-repeat;
+    background-size: 100px 100px; 
+}
+.content__middle-block > .content__block-title{
+    margin-bottom: 110px;
+}
+.content__bottom-block{
+    margin: 10px 0;
+    background: url("../img/clock.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    padding-right: 110px;    
+}
+.content__block-title{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.content__block-text{
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 15px;
+}
