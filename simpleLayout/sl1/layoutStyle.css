@@ -1,3 +1,4 @@
+
 /* Обнуление стилей*/
 *{
     padding: 0;
@@ -63,7 +64,10 @@ body{
     box-shadow: 0 0 2px 2px;
 }
 .name-block{
-    
+    overflow: hidden;
+    box-shadow: 3px -5px 10px 1px,inset 3px -5px 10px 1px;
+    border-radius: 30px;
+
 }
 .title{
     color: #afda16;
@@ -91,10 +95,6 @@ body{
     background-position: 50% 55px;
     background-repeat: no-repeat;
     background-size: 100px 100px; 
-    overflow: hidden;
-    box-shadow: 3px -5px 10px 1px,inset 3px -5px 10px 1px;
-    border-radius: 30px;
-
 }
 .content__middle-block > .content__block-title{
     margin-bottom: 110px;
